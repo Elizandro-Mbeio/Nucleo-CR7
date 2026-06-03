@@ -18,10 +18,11 @@
 }
 
 :root {
-  ---dourado : #ffbe3b;
-  ---Fundo : linear-gradient(to bottom, #000000 40%, #000000 60%);
-  ---Box-shadow : inset 0 0 0 1px hwb(38 0% 0%);
-  ---trasnsition : transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  ---dourado: #ffbe3b;
+  ---Fundo: linear-gradient(to bottom, #000000 40%, #000000 60%);
+  ---Box-shadow: inset 0 0 0 1px hwb(38 0% 0%);
+  ---trasnsition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+
 }
 
 html {
@@ -219,7 +220,7 @@ header .menu-desktop ul li:hover {
     opacity 0.35s ease,
     transform 0.35s ease;
   /* object-fit: cover; */
-  object-fit: cover center ;
+  object-fit: cover center;
   z-index: 0;
 }
 
@@ -568,12 +569,10 @@ header .menu-desktop ul li:hover {
 .carreira .times .tracotimes {
   width: 3em;
   height: 0.5em;
-  background: linear-gradient(
-    to right,
-    #ffc400 35%,
-    #ffffff 30%,
-    #ffaa00cc 35%
-  );
+  background: linear-gradient(to right,
+      #ffc400 35%,
+      #ffffff 30%,
+      #ffaa00cc 35%);
   border-radius: 90px;
 }
 
@@ -619,20 +618,20 @@ header .menu-desktop ul li:hover {
 }
 
 .familia .text h3 {
- color: var(---dourado);
- text-decoration: underline;
- display: block;
+  color: var(---dourado);
+  text-decoration: underline;
+  display: block;
 }
 
 .familia .text h4 {
- display: none;
+  display: none;
 }
 
 
 .familia .imagens {
   height: 70%;
   margin: 0 auto;
-  overflow: auto ;
+  overflow: auto;
   scrollbar-width: none;
   cursor: pointer;
   border: 3px solid rgb(240, 237, 232);
@@ -649,7 +648,7 @@ header .menu-desktop ul li:hover {
 }
 
 
-.familia .imagens .img1{
+.familia .imagens .img1 {
   width: 15rem;
   margin: 0 auto;
   /* overflow: auto; */
@@ -659,7 +658,7 @@ header .menu-desktop ul li:hover {
 
 }
 
-.familia .imagens .img2{
+.familia .imagens .img2 {
   width: 17rem;
   margin: 0 auto;
   border: 3px solid rgb(255, 179, 0);
@@ -676,7 +675,7 @@ header .menu-desktop ul li:hover {
 
 
 
-.familia .imagens .img3{
+.familia .imagens .img3 {
   width: 15rem;
   margin: 0 auto;
   /* overflow: auto; */
@@ -695,10 +694,10 @@ header .menu-desktop ul li:hover {
 
 .Galeria {
   width: 95%;
-  height: 95vh; 
+  height: 95vh;
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   margin: 0 auto;
 }
@@ -710,21 +709,34 @@ header .menu-desktop ul li:hover {
 }
 
 .Galeria .fotosgaleria {
-  border-left: 2px solid var(---dourado);
-  border-right: 2px solid var(---dourado);
+  border: 2px solid rgb(154, 152, 152);
+  /* border-right: 2px solid rgb(154, 152, 152); */
 
-  scrollbar-width: none;
-  overflow: auto;
+  width: 90%;
+  height: 85vh;
+  
+
+  /* overflow: auto;
   width: 100%;
   height: 70%;
   flex-wrap: wrap;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(imagens/fundoGoat.jpg);
-  background-position: center;
+  /* background-image: url(imagens/fundo\ cards\ premios.png); */
+  /* background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+ 
+
+    /* position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.44);
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(10px);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; */
 
 
 }
@@ -732,9 +744,9 @@ header .menu-desktop ul li:hover {
 .Galeria .fotosgaleria .imggaleria {
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  grid-template-columns: repeat(2 , 1fr);
+  margin: 0 auto;
+
 
 }
 
@@ -744,16 +756,16 @@ header .menu-desktop ul li:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: auto ;
+  overflow: auto;
   scrollbar-width: none;
-  
+
 }
 
 .Galeria .fotosgaleria .imggaleria img {
   width: 7rem;
   height: 9em;
   margin: 0.2rem;
-  border: 2px solid var(---dourado);
+  border: 2px solid rgb(154, 152, 152);
   object-fit: fill;
 }
 
@@ -770,10 +782,12 @@ header .menu-desktop ul li:hover {
   justify-content: center;
 }
 
-.Fim h2 {
+.Fim h3 {
   width: 80%;
   height: 15%;
   background-color: #ffb3007e;
+  border: 2px solid var(---dourado);
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -789,9 +803,12 @@ header .menu-desktop ul li:hover {
   background-size: cover;
 }
 
+
+
 footer {
   width: 100%;
-  height: 5rem;
+  /* height: 5rem; */
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -799,26 +816,53 @@ footer {
 
 }
 
-footer ul {
-display: flex;
-align-items: center;
-justify-content: space-evenly;
+.footercontent {
+  background-color: #000000;
+  display:grid ;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3rem 3.5rem;
 }
 
-footer ul li {
-list-style: none;
-margin: 0.2rem;
-font-size: 15px;
-}
 
-footer ul li img {
-  width: 2rem;
-  height: 2rem;
-  border:  2px solid white;
+.footercontent .logo{
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 50%;
 }
 
+.footercontent  .redesSociai{
+  display: flex;
+  grid: 2rem;
+  margin-top: 1.5rem;
+}
 
+.footercontent  .redesSociai .footerlink {
+  height: 3rem;
+  width: 3rem;
+  margin:0rem 2.5rem 0rem 0rem;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+}
+
+.footercontent  .redesSociai .footerlink img {
+  width: 100%;
+}
+
+.footercontent  .redesSociai .footerlink:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+.footercontent .footerlist {
+   margin: 0 auto;
+}
+
+.footercontent .footerlist li {
+  list-style: none;
+}
 
 @media screen and (max-width: 1030px) {
   * {
@@ -917,9 +961,9 @@ footer ul li img {
     font-size: 25px;
   }
 
-    header .menu-mobile nav ul a{
-      text-decoration: none;
-    }
+  header .menu-mobile nav ul a {
+    text-decoration: none;
+  }
 
   header .menu-mobile nav ul a li {
     text-decoration: none;
@@ -965,27 +1009,28 @@ footer ul li img {
     height: 20%;
   }
 
- .dizeres1 {
-  width: 80%;
-  height: 50%;
-}
+  .dizeres1 {
+    width: 80%;
+    height: 50%;
+  }
 
-.apresentaçao .dizeres1 h3 {
-  color: #ffb300;
-  font-weight: 700;
-  font-size: 18px;
-}
+  .apresentaçao .dizeres1 h3 {
+    color: #ffb300;
+    font-weight: 700;
+    font-size: 18px;
+  }
 
-.apresentaçao .dizeres1 p {
-  font-size: 18px;
-  color: rgb(255, 255, 255);
-  font-weight: 600;
-}
+  .apresentaçao .dizeres1 p {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+  }
 
-.apresentaçao .dizeres1 h2 {
-  color: rgb(255, 255, 255);
-  font-size: 30px;
-}
+  .apresentaçao .dizeres1 h2 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+  }
+
   /* Estilo do vídeo */
 
   .vidimg {
@@ -1052,7 +1097,7 @@ footer ul li img {
 
   .sobre .historia {
     width: 100%;
-    height: 100%;
+    height: 70%;
     /* background-color: #ffaa00cc; */
     margin: 0 auto;
   }
@@ -1124,9 +1169,8 @@ footer ul li img {
     justify-content: space-between;
     flex-direction: column;
     opacity: 1;
-    margin-bottom: 0px 0px  10em 0px;
+    margin-bottom: 0em 0em 2em 0em;
     /* background-color: #fff; */
-
   }
 
   .sobre .historia .dizeres .dizer {
@@ -1136,25 +1180,27 @@ footer ul li img {
     justify-content: center;
     padding: 20px;
     color: #ffffff;
-    text-align: justify;
+    text-align: left;
     opacity: 1;
+    font-size: 1rem;
     /* background-color: #7e0000; */
   }
 
-   .sobre .historia .dizeres .dizer .spanp{
+  .sobre .historia .dizeres .dizer .spanp {
     color: var(---dourado);
-   }
+  }
 
-   .sobre .historia .dizeres .dizer span{
+  .sobre .historia .dizeres .dizer span {
     color: var(---dourado);
-   }
-   .sobre .historia .dizeres .dizer h4 {
+  }
+
+  .sobre .historia .dizeres .dizer h4 {
     width: 3rem;
     height: 2rem;
     font-size: 20px;
     border: 2px solid white;
     border-radius: 50%;
-   }
+  }
 
   .sobre .historia:hover .dizeres {
     margin-right: 0px;
@@ -1163,13 +1209,12 @@ footer ul li img {
   }
 
   .sobre .historia .dizeres .dizer p {
-        text-align: left;
+    text-align: left;
   }
 
   /* PREMIOS */
 
   .Premios {
-    /* margin: 15rem 0rem 30rem 0rem; */
     width: 100%;
     height: 95vh;
     margin-bottom: 15rem;
@@ -1225,8 +1270,10 @@ footer ul li img {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    /* background-color: #43434350; */
-    /* flex-direction: column; */
+    border: 2px solid #e0e0e0;
+
+    overflow: auto;
+    scrollbar-width: none;
   }
 
   .Premios .trofeus .trofeusp {
@@ -1247,7 +1294,6 @@ footer ul li img {
     border: 1px solid rgba(255, 255, 255, 0.775);
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(10px);
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0);
     transition:
       transform 0.3s ease,
       box-shadow 0.3s ease,
@@ -1257,17 +1303,16 @@ footer ul li img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* flex: 1 1 200px; */
-    /* display: flex;
+    flex: 1 1 200px; 
+    display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
-    flex-basis: 50; */
+    flex-basis: 50;
 
     img {
-      width: 100%;
+      width: 10rem;
       height: 50%;
-      position: relative;
-      object-fit: contain;
+      margin: 0 auto;
     }
   }
 
@@ -1350,7 +1395,7 @@ footer ul li img {
 }
 
 .familia .text h3 {
- display: none;
+  display: none;
 }
 
 .familia .text h4 {
@@ -1358,4 +1403,50 @@ footer ul li img {
   text-decoration: underline;
   display: block;
 
+}
+
+
+.Galeria {
+  width: 95%;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.Galeria h2 {
+  font-size: 2rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+.Galeria .fotosgaleria {
+  border: 2px solid rgb(154, 152, 152);
+
+  width: 90%;
+  height: 70vh;
+
+
+}
+
+.Galeria .fotosgaleria .imggaleria {
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(2 , 1fr);
+  margin: 0 auto;
+  overflow: auto;
+
+
+}
+
+
+.Galeria .fotosgaleria .imggaleria img {
+  width: 13rem;
+  height: 17em;
+  margin: 0.2rem;
+
+  border: 2px solid rgb(154, 152, 152);
+  object-fit: fill;
 }
