@@ -48,6 +48,8 @@ body {
   display: block;
 }
 
+
+
 header {
   width: 100%;
   height: 5em;
@@ -980,6 +982,15 @@ footer {
   }
 
   header .menu-mobile.abrir-menu {
+    display: block;
+  }
+
+   .open::before.btnexcluir {
+  display: none;
+
+ }
+
+  .open::after:hover.btnexcluir {
     display: block;
   }
 
